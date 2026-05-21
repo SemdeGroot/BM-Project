@@ -1,1 +1,39 @@
+# Project context and source material
 context/
+
+# R session and history files
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+
+# RStudio project files
+.Rproj.user/
+
+# R package build artifacts
+*.Rcheck/
+*.tar.gz
+*.tgz
+
+# renv local state
+renv/library/
+renv/staging/
+renv/python/
+renv/sandbox/
+
+# RMarkdown and knitr artifacts
+*_cache/
+*_files/
+*.utf8.md
+*.knit.md
+*.html
+*.pdf
+*.docx
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.positai
