@@ -1,8 +1,4 @@
 context/
-*.log
-*.tmp
-*.bak
-*.autosave
 
 # Python cache and local environments
 __pycache__/
