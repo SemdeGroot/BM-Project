@@ -1,0 +1,72 @@
+study,figure,assay,cell_line,condition,target,value,trend,model_relation
+Gilin et al.,Table 1,model parameter,CPN model,final model,k1,0.1929,,k1
+Gilin et al.,Table 1,model parameter,CPN model,final model,k2,0.0007,,k2
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k3, k21",0.0148,,k3; k21
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k4, k22",1.6732,,k4; k22
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k5, k29",0.2681,,k5; k29
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k6, k30",0.0809,,k6; k30
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k12, k15",1.5478,,k12; k15
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k13, k16",0.0416,,k13; k16
+Gilin et al.,Table 1,model parameter,CPN model,final model,"k14, k17",0.0226,,k14; k17
+Gilin et al.,Table 1,model parameter,CPN model,final model,k18,0.4738,,k18
+Gilin et al.,Table 1,model parameter,CPN model,final model,k19,0.1392,,k19
+Gilin et al.,Table 1,model parameter,CPN model,final model,k20,0.2144,,k20
+Gilin et al.,Table 1,model parameter,CPN model,final model,ILK tr1,1,,HIF -> ILK
+Gilin et al.,Table 1,model parameter,CPN model,final model,ILK tr2,1,,HIF -> ILK
+Gilin et al.,Table 1,model parameter,CPN model,final model,ILK deg,3,,ILK degradation
+Gilin et al.,Table 1,model parameter,CPN model,final model,FL1,0.4181,,ILK -> p-Akt
+Gilin et al.,Table 1,model parameter,CPN model,final model,FL2,0.4181,,p-Akt -> p-mTOR
+Gilin et al.,Table 1,model parameter,CPN model,final model,FL3,0.4181,,p-mTOR -> HIF
+Gilin et al.,Table 1,model parameter,CPN model,final model,pAkt deg,0.2,,p-Akt degradation
+Gilin et al.,Table 1,model parameter,CPN model,final model,pmTOR deg,3,,p-mTOR degradation
+Gilin et al.,Table 2,initial marking,CPN model,simulation,VHL,10,,VHL
+Gilin et al.,Table 2,initial marking,CPN model,simulation,PHD,10,,PHD
+Gilin et al.,Table 2,initial marking,CPN model,simulation,ARNT,5,,ARNT
+Gilin et al.,Table 2,initial marking,CPN model,simulation,HRE,1,,HRE
+Gilin et al.,Table 2,initial marking,CPN model,oxygen sweep,O2,0.1-0.9,,O2
+Gilin et al.,Figure 5,simulation,CPN model,O2 = 0.1,HIF,757.26,up,O2 -> HIF
+Gilin et al.,Figure 5,simulation,CPN model,O2 = 0.9,HIF,0.07,down,O2 -> HIF
+Gilin et al.,Figure 7a,simulation,CPN model,O2 sweep,HIF,,switch around O2 = 0.6,O2 -> HIF
+Gilin et al.,Figure 7b,simulation,CPN model,O2 sweep,"ILK, p-Akt, p-mTOR",,down between O2 = 0.6 and 0.7,HIF -> ILK -> p-Akt -> p-mTOR
+Gilin et al.,Figure 4,western blot,MCF-7,hypoxia,HIF-1alpha,,up,O2 -> HIF
+Gilin et al.,Figure 4,western blot,MCF-7,hypoxia,ILK,,up,HIF -> ILK
+Gilin et al.,Figure 4,western blot,MCF-7,hypoxia,p-Akt,,slightly up,ILK -> p-Akt
+Gilin et al.,Figure 4,western blot,MCF-7,hypoxia,p-mTOR,,up,p-Akt -> p-mTOR
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,HIF-1alpha,,up,O2 -> HIF
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,ILK,,up,HIF -> ILK
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,YB-1,,up,ILK -> YB-1
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,Foxo3a,,down,YB-1 -| Foxo3a
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,Snail,,up,HIF/YB-1 -> Snail
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,Zeb1,,up,Snail -> Zeb1
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,E-cadherin,,down,Snail/Zeb1 -| E-cadherin
+Chou et al.,Figure 1A-B,western blot,MCF-7,hypoxia,vimentin,,up,Snail/Zeb1 -> vimentin
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,HIF-1alpha,,down,T315 -| ILK activity
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,ILK,,down,T315 -| ILK activity
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,YB-1,,down,ILK -> YB-1
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,p-Akt,,down,ILK -> p-Akt
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,p-mTOR,,down,p-Akt -> p-mTOR
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,p-GSK3beta,,down,ILK -> p-GSK3beta
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,Foxo3a,,up,YB-1 -| Foxo3a
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,E-cadherin,,up,Snail/Zeb1 -| E-cadherin
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,vimentin,,down,Snail/Zeb1 -> vimentin
+Chou et al.,Figure 3A,western blot,MCF-7,hypoxia + T315,Snail,,down,HIF/YB-1 -> Snail
+Chou et al.,Figure 4D,luciferase,PC-3,YB-1 expression,Foxo3a promoter activity,,down,YB-1 -| Foxo3a
+Chou et al.,Figure 5A,luciferase,PC-3,hypoxia or HIF/ILK expression,Snail promoter activity,,up,HIF/YB-1 -> Snail
+Chou et al.,Figure 7B-C,densitometry,PC-3 xenograft,T315 vs vehicle,"Akt, mTOR, GSK3beta, YB-1, vimentin, Snail, Zeb1",,down,T315 -| ILK activity
+Chou et al.,Figure 7B-C,densitometry,PC-3 xenograft,T315 vs vehicle,"Foxo3a, E-cadherin",,up,T315 -| ILK activity
+Hsu et al.,Figure 1A,ELISA,MDA-MB-231,baseline,IL-6,120 pg/ml,high,IL-6 -> E2F1
+Hsu et al.,Figure 1A,ELISA,MCF-7,baseline,IL-6,0.1 pg/ml,low,IL-6 -> E2F1
+Hsu et al.,Figure 1A,IHC,human breast tumors,clinical samples,IL-6 and ILK,r = 0.473; P < 0.0001,positive correlation,IL-6 -> ILK
+Hsu et al.,Figure 1B,western blot,MCF-7,IL-6 treatment,ILK,,up,IL-6 -> E2F1 -> ILK
+Hsu et al.,Figure 1B,western blot,MCF-7,IL-6 treatment,p-Akt,,up,ILK -> p-Akt
+Hsu et al.,Figure 2A-C,luciferase/qPCR/western blot,MCF-7 or MDA-MB-231,E2F1 perturbation,ILK,,up with E2F1,E2F1 -> ILK
+Hsu et al.,Figure 2D-E,ChIP/EMSA,MCF-7,50 ng/ml IL-6,E2F1 binding to ILK promoter,50 ng/ml IL-6,up,IL-6 -> E2F1 -> ILK
+Hsu et al.,Figure 3B,luciferase/western blot,MCF-7,IL-6 dose response,"E2F1, cyclin D1, ILK",,up,IL-6 -> E2F1 -> ILK
+Hsu et al.,Figure 4B,western blot densitometry,MDA-MB-231,T315 dose response,"p-Akt, p-Stat3",,down,T315 -| ILK activity
+Hsu et al.,Figure 4C,luciferase,MCF-7IL-6 or MCF-7,ILK perturbation,NF-kappaB activity,,up with ILK,ILK -> NF-kappaB
+Hsu et al.,Figure 4D,luciferase/qPCR/ELISA,MDA-MB-231,ILK knockdown,"NF-kappaB activity, IL-6 mRNA, secreted IL-6",,down,ILK -> NF-kappaB -> IL-6
+Hsu et al.,Figure 4E,luciferase/qPCR,MDA-MB-231 or SUM-159,T315 dose response,"NF-kappaB activity, IL-6 mRNA",,down,T315 -| ILK activity
+Hsu et al.,Figure 5A,luciferase,MDA-MB-231TRE-shILK,ILK knockdown,NF-kappaB activity,49 +/- 2% of control,down,ILK -> NF-kappaB
+Hsu et al.,Figure 5A,qPCR,MDA-MB-231TRE-shILK,ILK knockdown,IL-6 mRNA,37 +/- 1% of control,down,NF-kappaB -> IL-6
+Hsu et al.,Figure 5A,luciferase/qPCR,MDA-MB-231TRE-shILK + CA-Akt,CA-Akt rescue,NF-kappaB activity; IL-6 mRNA,1.6 +/- 0.1; 2.5 +/- 0.4 fold,up,Akt -> NF-kappaB -> IL-6
+Hsu et al.,Figure 5A,luciferase/qPCR,MDA-MB-231TRE-shILK + RelA,RelA rescue,NF-kappaB activity; IL-6 mRNA,41.8 +/- 4.4; 7.5 +/- 0.9 fold,up,NF-kappaB -> IL-6
