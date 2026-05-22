@@ -70,3 +70,28 @@ Hsu et al.,Figure 5A,luciferase,MDA-MB-231TRE-shILK,ILK knockdown,NF-kappaB acti
 Hsu et al.,Figure 5A,qPCR,MDA-MB-231TRE-shILK,ILK knockdown,IL-6 mRNA,37 +/- 1% of control,down,NF-kappaB -> IL-6
 Hsu et al.,Figure 5A,luciferase/qPCR,MDA-MB-231TRE-shILK + CA-Akt,CA-Akt rescue,NF-kappaB activity; IL-6 mRNA,1.6 +/- 0.1; 2.5 +/- 0.4 fold,up,Akt -> NF-kappaB -> IL-6
 Hsu et al.,Figure 5A,luciferase/qPCR,MDA-MB-231TRE-shILK + RelA,RelA rescue,NF-kappaB activity; IL-6 mRNA,41.8 +/- 4.4; 7.5 +/- 0.9 fold,up,NF-kappaB -> IL-6
+Lee et al.,Abstract / kinase assay,kinase assay,ILK complex,T315 / compound 22,ILK activity,IC50 = 0.6 uM,down,T315 -| ILK activity
+Lee et al.,Abstract,cell viability,breast and prostate cancer cell lines,T315 / compound 22,cell viability,IC50 = 1-2.5 uM,down,T315 effect
+Lee et al.,Abstract,western blot,cancer cell lines,T315 / compound 22,p-Akt Ser473,,down,T315 -| ILK activity
+Lee et al.,Abstract,western blot,cancer cell lines,T315 / compound 22,GSK3beta phosphorylation,,down,T315 -| ILK activity
+Lee et al.,Abstract,western blot,PC-3,T315 / compound 22,YB-1,,down,T315 -| ILK activity
+Chou et al.,Figure 2B,western blot,MCF-7,hypoxia + ILK knockdown,HIF-1alpha,,down,ILK -> HIF
+Chou et al.,Figure 2B,western blot,MCF-7,hypoxia + ILK knockdown,p-Akt,,down,ILK -> p-Akt
+Chou et al.,Figure 2B,western blot,MCF-7,hypoxia + ILK knockdown,YB-1,,down,ILK -> YB-1
+Chou et al.,Figure 2B,western blot,MCF-7,hypoxia + ILK knockdown,Foxo3a,,up,YB-1 -| Foxo3a
+Chou et al.,Figure 3C,western blot,PC-3,hypoxia + rapamycin,HIF-1alpha,,down,p-mTOR -> HIF
+Chou et al.,Figure 4A,RT-PCR,PC-3,hypoxia + T315,YB-1 mRNA,,down,ILK -> YB-1
+Chou et al.,Figure 4A,RT-PCR,PC-3,hypoxia + T315,Foxo3a mRNA,,up,YB-1 -| Foxo3a
+Chou et al.,Figure 4B,western blot,PC-3,YB-1 knockdown,Foxo3a,,up,YB-1 -| Foxo3a
+Chou et al.,Figure 4B,western blot,PC-3,YB-1 knockdown,E-cadherin,,up,Foxo3a -> E-cadherin
+Chou et al.,Figure 5B,western blot,PC-3,hypoxia + T315,Snail,,down,HIF/YB-1 -> Snail
+Chou et al.,Figure 5B,western blot,PC-3,hypoxia + T315,p-GSK3beta,,down,ILK -> p-GSK3beta
+Hsu et al.,Figure 3C,luciferase/western blot,MCF-7IL-6,CDK2 inhibitor,E2F1 activity,,down,CDK2 -> E2F1
+Hsu et al.,Figure 3C,western blot,MCF-7IL-6,CDK2 inhibitor,ILK,,down,E2F1 -> ILK
+Hsu et al.,Figure 3D,western blot,MCF-7IL-6,Stat3 inhibitor,p-Stat3,,down,IL-6 -> p-Stat3
+Hsu et al.,Figure 3D,western blot,MCF-7IL-6,Stat3 inhibitor,cyclin D1,,down,p-Stat3 -> cyclin D1
+Hsu et al.,Figure 3D,western blot,MCF-7IL-6,Stat3 inhibitor,E2F1,,down,cyclin D1/CDK2 -> E2F1
+Hsu et al.,Figure 3D,western blot,MCF-7IL-6,Stat3 inhibitor,ILK,,down,E2F1 -> ILK
+Hsu et al.,Figure 3E,western blot,MCF-7IL-6 / MDA-MB-231 / SUM-159,ILK knockdown,p-Akt,,down,ILK -> p-Akt
+Hsu et al.,Figure 3E,western blot,MCF-7IL-6 / MDA-MB-231 / SUM-159,ILK knockdown,p-Stat3,,down,ILK -> p-Stat3
+Hsu et al.,Figure 4A,western blot,MCF-7 + CA-ILK,T315,p-Akt,,down,T315 -| ILK activity
