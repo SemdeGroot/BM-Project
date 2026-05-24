@@ -28,7 +28,7 @@
           </graphics>
         </attribute>
         <attribute name="Fixed" id="3008" net="1">
-          <![CDATA[0]]>
+          <![CDATA[1]]>
           <graphics count="0"/>
         </attribute>
         <attribute name="Logic" id="3009" net="1">
@@ -760,13 +760,13 @@
           </graphics>
         </attribute>
         <attribute name="Marking" id="4119" net="1">
-          <![CDATA[0]]>
+          <![CDATA[0.6]]>
           <graphics count="1">
             <graphic xoff="372.00" yoff="-418.00" x="1272.00" y="1012.00" id="4120" net="1" show="0" grparent="4125" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <attribute name="Fixed" id="4121" net="1">
-          <![CDATA[0]]>
+          <![CDATA[1]]>
           <graphics count="0"/>
         </attribute>
         <attribute name="Logic" id="4122" net="1">
@@ -3069,8 +3069,8 @@
         <graphics count="1">
           <graphic id="3703" net="1" source="3012" target="3337" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
             <points count="2">
-              <point x="232.00" y="121.53"/>
-              <point x="1308.00" y="258.47"/>
+              <point x="230.00" y="121.27"/>
+              <point x="1310.00" y="258.73"/>
             </points>
           </graphic>
         </graphics>
@@ -3289,8 +3289,8 @@
         <graphics count="1">
           <graphic id="3763" net="1" source="3012" target="3376" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
             <points count="2">
-              <point x="232.00" y="125.62"/>
-              <point x="1148.00" y="554.38"/>
+              <point x="230.00" y="124.68"/>
+              <point x="1150.00" y="555.32"/>
             </points>
           </graphic>
         </graphics>
@@ -4235,8 +4235,8 @@
         <graphics count="1">
           <graphic id="4229" net="1" source="4125" target="4164" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
             <points count="2">
-              <point x="912.00" y="1430.00"/>
-              <point x="1088.00" y="1430.00"/>
+              <point x="910.00" y="1430.00"/>
+              <point x="1090.00" y="1430.00"/>
             </points>
           </graphic>
         </graphics>
@@ -4257,8 +4257,8 @@
         <graphics count="1">
           <graphic id="4235" net="1" source="4164" target="4125" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
             <points count="2">
-              <point x="1088.00" y="1430.00"/>
-              <point x="912.00" y="1430.00"/>
+              <point x="1090.00" y="1430.00"/>
+              <point x="910.00" y="1430.00"/>
             </points>
           </graphic>
         </graphics>
@@ -4380,7 +4380,207 @@
     </metadataclass>
     <metadataclass count="0" name="Comment"/>
     <metadataclass count="0" name="Image"/>
-    <metadataclass count="0" name="Plot"/>
+    <metadataclass count="1" name="Plot">
+      <metadata id="5040" net="1">
+        <attribute name="Name" id="5041" net="1">
+          <![CDATA[Default View]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ID" id="5042" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="Comment" id="5043" net="1">
+          <![CDATA[]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="Nodeclass" id="5044" net="1">
+          <![CDATA[Place]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ViewerType" id="5045" net="1">
+          <![CDATA[xyPlot]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="Results" id="5046" net="1">
+          <![CDATA[Marking]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="NodeColour" id="5047" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="RegEx" id="5048" net="1">
+          <![CDATA[.]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="RegExInvert" id="5049" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="PlaceList" type="ColList" id="5050" net="1">
+          <colList row_count="0" col_count="1" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+            </colList_head>
+            <colList_body/>
+          </colList>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="CurveInfo" type="ColList" id="5051" net="1">
+          <colList row_count="0" col_count="7" active_row="0" active_col="0">
+            <colList_head>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+              <colList_colLabel>
+                <![CDATA[]]>
+              </colList_colLabel>
+            </colList_head>
+            <colList_body/>
+          </colList>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="IsCurrent" id="5052" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ViewTitle" id="5053" net="1">
+          <![CDATA[Default View]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ChartWidth" id="5054" net="1">
+          <![CDATA[600]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ChartHeight" id="5055" net="1">
+          <![CDATA[600]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="WindowWidth" id="5056" net="1">
+          <![CDATA[600]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="WindowHeight" id="5057" net="1">
+          <![CDATA[600]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="XAxisTitle" id="5058" net="1">
+          <![CDATA[Time]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="YAxisTitle" id="5059" net="1">
+          <![CDATA[]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="DefaultLineWidth" id="5060" net="1">
+          <![CDATA[2]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="DefaultLineStyle" id="5061" net="1">
+          <![CDATA[100]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ShowLegend" id="5062" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="LegendHorizontalPosition" id="5063" net="1">
+          <![CDATA[32]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="LegendVerticalPosition" id="5064" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ShowLines" id="5065" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="ShowSymbols" id="5066" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="BarWidth" id="5067" net="1">
+          <![CDATA[20]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="IntervalWidth" id="5068" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="XAxisVariable" id="5069" net="1">
+          <![CDATA[Time]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="XAxisVariableName" id="5070" net="1">
+          <![CDATA[Simulation Time]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="SumOfNodes" id="5071" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="FixedXAdjustment" id="5072" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="FixedYAdjustment" id="5073" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="X_Axis_Max" id="5074" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="X_Axis_Min" id="5075" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="Y_Axis_Max" id="5076" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="Y_Axis_Min" id="5077" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="X_ZOOM" id="5078" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="Y_ZOOM" id="5079" net="1">
+          <![CDATA[1]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="SortCurvesBy" id="5080" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <attribute name="HistogramFrequencyType" id="5081" net="1">
+          <![CDATA[0]]>
+          <graphics count="0"/>
+        </attribute>
+        <graphics count="0"/>
+      </metadata>
+    </metadataclass>
     <metadataclass count="1" name="Simulation Properties">
       <metadata id="864" net="1">
         <attribute name="interval start" id="865" net="1">
@@ -4404,7 +4604,7 @@
           <graphics count="0"/>
         </attribute>
         <attribute name="simulator properties" type="ColList" id="870" net="1">
-          <colList row_count="0" col_count="2" active_row="0" active_col="0">
+          <colList row_count="10" col_count="2" active_row="0" active_col="0">
             <colList_head>
               <colList_colLabel>
                 <![CDATA[]]>
@@ -4413,7 +4613,88 @@
                 <![CDATA[]]>
               </colList_colLabel>
             </colList_head>
-            <colList_body/>
+            <colList_body>
+              <colList_row nr="0">
+                <colList_col nr="0">
+                  <![CDATA[InBetweenVisualization]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[1]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="1">
+                <colList_col nr="0">
+                  <![CDATA[Refreshrate]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[5000]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="2">
+                <colList_col nr="0">
+                  <![CDATA[IntegratorStepSize]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[0.1]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="3">
+                <colList_col nr="0">
+                  <![CDATA[LinearSolverType]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[CVDense]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="4">
+                <colList_col nr="0">
+                  <![CDATA[CalculateStepSize]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[0]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="5">
+                <colList_col nr="0">
+                  <![CDATA[CheckValues]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[0]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="6">
+                <colList_col nr="0">
+                  <![CDATA[OutputNoiseValues]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[0]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="7">
+                <colList_col nr="0">
+                  <![CDATA[UseODEsReduction]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[1]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="8">
+                <colList_col nr="0">
+                  <![CDATA[RelativeTol]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[1.0e-5]]>
+                </colList_col>
+              </colList_row>
+              <colList_row nr="9">
+                <colList_col nr="0">
+                  <![CDATA[AbsTol]]>
+                </colList_col>
+                <colList_col nr="1">
+                  <![CDATA[1.0e-10]]>
+                </colList_col>
+              </colList_row>
+            </colList_body>
           </colList>
           <graphics count="0"/>
         </attribute>
