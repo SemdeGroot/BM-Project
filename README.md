@@ -1,11 +1,41 @@
-This project extends the Gilin et al. continuous Petri net for the HIF-ILK hypoxia response.
-The current `main.cpn` contains the base HIF model plus the ILK feedback route `ILK_protein -> ILK_activity -> p_473S_Akt -> p_mTOR -> HIF`.
-We added `ILK_activity` to separate ILK protein abundance from active ILK signaling.
-T315 is included as an inhibitor input that reduces `ILK_activity`, not ILK protein and not Akt directly.
-The T315 transition is modeled with ordinary arcs and a reverse arc, following the style used in the original model.
-No inhibitor arcs are currently used in `main.cpn`.
-We avoided inhibitor arcs because they model a hard block, while T315 is represented here as a dose-dependent reduction of active ILK signaling.
-The starting rates for the new layer are `ILK_activation = 0.4181`, `ILK_activity_deg = 0.2000` and `T315_inhibits_ILK_activity = 0.6000`.
-Next steps are to simulate the base model, test T315 doses, add the Chou module with YB-1, Foxo3a and EMT markers and then add the Hsu IL-6/NF-kappaB feedback module.
+# BioModeling Snoopy Project
 
-Please update this README when you update the model.
+This project extends the Gilin et al. continuous Petri net for the HIF-ILK hypoxia response.
+
+We split the Snoopy models into steps so we can go back to an earlier version if needed:
+
+```text
+snoopy-models/base.cpn
+snoopy-models/base_with_T315.cpn
+snoopy-models/chou_extended.cpn
+snoopy-models/hsu_chou_extended.cpn
+snoopy-models/main.cpn
+```
+
+The steps are:
+
+```text
+base.cpn: original rebuilt HIF-ILK model.
+base_with_T315.cpn: added ILK_activity and T315 inhibition.
+chou_extended.cpn: adds the Chou genes and EMT markers.
+hsu_chou_extended.cpn: adds the IL-6 and NF-kappaB pathway.
+main.cpn: final model, same as the most complete current version.
+```
+
+Each step builds on the previous model. The T315 version models T315 as reduced ILK activity, not as ILK protein degradation and not as direct Akt inhibition.
+
+Current note: `base_with_T315.cpn` and `main.cpn` contain the current working T315 model. The other split model files still need to be filled from Snoopy before they can be used for exports.
+
+For result analysis, make a local Python environment first:
+
+```text
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+On Windows, activate it with:
+
+```text
+venv\Scripts\activate
+```
