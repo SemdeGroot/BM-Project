@@ -760,7 +760,7 @@
           </graphics>
         </attribute>
         <attribute name="Marking" id="4119" net="1">
-          <![CDATA[0.6]]>
+          <![CDATA[1.2]]>
           <graphics count="1">
             <graphic xoff="272.00" yoff="-458.00" x="1772.00" y="962.00" id="4120" net="1" show="0" grparent="4125" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
@@ -2999,7 +2999,7 @@
                   <![CDATA[Main]]>
                 </colList_col>
                 <colList_col nr="1">
-                  <![CDATA[MassAction(0.6000)]]>
+                  <![CDATA[MichaelisMenten( 1,0.6 )]]>
                 </colList_col>
               </colList_row>
             </colList_body>
@@ -4619,7 +4619,7 @@
                   <![CDATA[Main]]>
                 </colList_col>
                 <colList_col nr="1">
-                  <![CDATA[MassAction(0.1000)]]>
+                  <![CDATA[MassAction(0.0100)]]>
                 </colList_col>
               </colList_row>
             </colList_body>
@@ -4679,7 +4679,7 @@
                   <![CDATA[Main]]>
                 </colList_col>
                 <colList_col nr="1">
-                  <![CDATA[MassAction(0.2000)]]>
+                  <![CDATA[MassAction(0.3000)]]>
                 </colList_col>
               </colList_row>
             </colList_body>
@@ -4946,13 +4946,13 @@
         <attribute name="Multiplicity" id="3633" net="1">
           <![CDATA[1]]>
           <graphics count="1">
-            <graphic xoff="268.17" yoff="-263.58" x="825.67" y="481.40" id="3634" net="1" show="0" grparent="3637" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+            <graphic xoff="268.17" yoff="-263.58" x="825.67" y="481.41" id="3634" net="1" show="0" grparent="3637" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <attribute name="Comment" id="3635" net="1">
           <![CDATA[]]>
           <graphics count="1">
-            <graphic xoff="295.65" yoff="-292.65" x="853.15" y="452.33" id="3636" net="1" show="0" grparent="3637" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+            <graphic xoff="295.65" yoff="-292.65" x="853.15" y="452.34" id="3636" net="1" show="0" grparent="3637" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <graphics count="1">
@@ -5188,13 +5188,13 @@
         <attribute name="Multiplicity" id="3699" net="1">
           <![CDATA[1]]>
           <graphics count="1">
-            <graphic xoff="463.18" yoff="69.98" x="1213.18" y="249.98" id="3700" net="1" show="0" grparent="3703" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+            <graphic xoff="463.18" yoff="69.98" x="1214.18" y="250.17" id="3700" net="1" show="0" grparent="3703" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <attribute name="Comment" id="3701" net="1">
           <![CDATA[]]>
           <graphics count="1">
-            <graphic xoff="485.00" yoff="72.32" x="1235.00" y="252.32" id="3702" net="1" show="0" grparent="3703" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+            <graphic xoff="485.00" yoff="72.32" x="1236.00" y="252.50" id="3702" net="1" show="0" grparent="3703" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <graphics count="1">
@@ -5408,13 +5408,13 @@
         <attribute name="Multiplicity" id="3759" net="1">
           <![CDATA[1]]>
           <graphics count="1">
-            <graphic xoff="301.52" yoff="42.61" x="1041.52" y="372.61" id="3760" net="1" show="0" grparent="3763" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+            <graphic xoff="301.52" yoff="42.61" x="1042.52" y="373.15" id="3760" net="1" show="0" grparent="3763" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <attribute name="Comment" id="3761" net="1">
           <![CDATA[]]>
           <graphics count="1">
-            <graphic xoff="341.44" yoff="45.20" x="1081.44" y="375.20" id="3762" net="1" show="0" grparent="3763" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+            <graphic xoff="341.44" yoff="45.20" x="1082.44" y="375.74" id="3762" net="1" show="0" grparent="3763" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
           </graphics>
         </attribute>
         <graphics count="1">
