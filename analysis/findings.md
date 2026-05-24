@@ -7,3 +7,7 @@ For example, HIF at high oxygen does not drop as close to zero as in the origina
 Still, the qualitative behavior is correct.
 Low O2 gives higher HIF, ILK, p-473S-Akt and p-mTOR than high O2.
 So we can use the rebuilt model as a qualitative base model, but not as an exact numerical copy of the original study. Maybe we can improve this? I do not know how, maybe discuss during midterm discussion.
+
+The base plots show that HIF and the ILK pathway go down when O2 increases.
+The T315 plots show that higher T315 lowers ILK activity, p-473S-Akt and p-mTOR.
+The ILK protein stays almost the same with T315, which fits our idea that T315 blocks ILK activity instead of removing ILK protein.
