@@ -17,3 +17,9 @@ The new rates are starting assumptions because Chou et al. mainly gives qualitat
 We kept the ILK-dependent rates close to the existing FL1 scale and used slower basal production for Foxo3a and E-cadherin so they can recover when T315 lowers ILK activity.
 After tuning the downstream EMT rates, T315 partly restores E-cadherin under hypoxia but not back to the normoxia value.
 This makes sense because O2 is still low in these simulations, so HIF can still drive Snail even when ILK activity is lowered.
+
+For the Hsu module we added the simplified IL6 -> p-Stat3 -> E2F1 -> ILK and p-Akt -> NF-kappaB -> IL6 feedback loop.
+The Hsu rates are assumptions, with NF-kappaB -> IL6 kept weak and IL6 degradation increased to avoid an overly strong feedback loop.
+T315 was changed to a Michaelis-Menten inhibition term using the 0.6 uM IC50 value.
+In the final simulations, T315 gives a dose-dependent decrease of the Hsu loop and 0.6 uM leaves about 57% activity, close to the intended IC50 behavior.
+Low and high initial IL6 still converge at long time, which we treat as a limitation of the simplified MassAction feedback model.
