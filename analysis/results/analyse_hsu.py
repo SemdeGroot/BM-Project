@@ -210,26 +210,26 @@ normoxia_values = [
     ecadherin_values[1],
     vimentin_values[1],
 ]
-normoxia_relative = []
+hypoxia_relative = []
 bar_colors = []
 for i in range(len(comparison_labels)):
-    value = normoxia_values[i] / hypoxia_values[i]
-    normoxia_relative.append(value)
+    value = hypoxia_values[i] / normoxia_values[i]
+    hypoxia_relative.append(value)
 
-    if value < 1:
-        bar_colors.append("tab:blue")
-    else:
+    if value > 1:
         bar_colors.append("tab:orange")
+    else:
+        bar_colors.append("tab:blue")
 
 plt.figure(figsize=(8, 4.5))
-plt.barh(comparison_labels, normoxia_relative, color=bar_colors)
+plt.barh(comparison_labels, hypoxia_relative, color=bar_colors)
 plt.axvline(1, color="tab:gray", linestyle="--")
-plt.xlabel("Normoxia / hypoxia final value")
-plt.title("Hypoxia mainly increases HIF and EMT markers")
+plt.xlabel("Hypoxia / normoxia final value")
+plt.title("Hypoxia increases HIF signaling and EMT outputs")
 plt.legend(
     handles=[
-        Patch(color="tab:blue", label="Lower in normoxia"),
-        Patch(color="tab:orange", label="Higher in normoxia"),
+        Patch(color="tab:orange", label="Higher in hypoxia"),
+        Patch(color="tab:blue", label="Lower in hypoxia"),
     ],
     loc="lower right",
 )
