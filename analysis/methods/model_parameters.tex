@@ -1,0 +1,102 @@
+% All transitions use MassAction kinetics except T315\_inhibits\_ILK\_activity (Michaelis-Menten).
+\begin{longtable}{@{}llp{2.6cm}p{4.6cm}@{}}
+\caption{Transition rate constants of the final model. Source is Gilin Table 1, Lee et al., calibrated in this work, or a stated assumption.}\label{tab:rates}\\
+\toprule
+Transition & Rate & Source & Note \\
+\midrule
+\endfirsthead
+\toprule Transition & Rate & Source & Note \\ \midrule \endhead
+\multicolumn{4}{l}{\textit{HIF base module (Gilin et al.)}} \\
+\texttt{k1} & 0.1929 & Gilin Table 1 & HIF production \\
+\texttt{k2} & 0.0007 & Gilin Table 1 & HIF degradation \\
+\texttt{k3} & 0.0148 & Gilin Table 1 & HIF-ARNT binding \\
+\texttt{k4} & 1.6732 & Gilin Table 1 & HIF-ARNT unbinding \\
+\texttt{k5} & 0.2681 & Gilin Table 1 & HRE binding \\
+\texttt{k6} & 0.0809 & Gilin Table 1 & HRE unbinding \\
+\texttt{k12} & 1.5478 & Gilin Table 1 & PHD binding \\
+\texttt{k13} & 0.0416 & Gilin Table 1 & PHD unbinding \\
+\texttt{k14} & 0.03 & Calibrated & oxygen hydroxylation, raised from 0.0226 \\
+\texttt{k15} & 1.5478 & Gilin Table 1 & PHD binding (ARNT branch) \\
+\texttt{k16} & 0.0416 & Gilin Table 1 & PHD unbinding \\
+\texttt{k17} & 0.03 & Calibrated & oxygen hydroxylation, raised from 0.0226 \\
+\texttt{k18} & 0.4738 & Gilin Table 1 & VHL binding \\
+\texttt{k19} & 0.1392 & Gilin Table 1 & VHL unbinding \\
+\texttt{k20} & 0.2144 & Gilin Table 1 & VHL recycling \\
+\texttt{k21} & 0.0148 & Gilin Table 1 & HIFOH-ARNT binding \\
+\texttt{k22} & 1.6732 & Gilin Table 1 & HIFOH-ARNT unbinding \\
+\texttt{k29} & 0.2681 & Gilin Table 1 & HRE binding (OH branch) \\
+\texttt{k30} & 0.0809 & Gilin Table 1 & HRE unbinding \\
+\texttt{ILK\_tr1} & 1.0 & Gilin Table 1 & HRE complex induces ILK \\
+\texttt{ILK\_tr2} & 1.0 & Gilin Table 1 & HRE complex induces ILK \\
+\texttt{ILK\_deg} & 3.0 & Gilin Table 1 & ILK degradation \\
+\midrule
+\multicolumn{4}{l}{\textit{ILK signaling and T315}} \\
+\texttt{FL1} & 0.4181 & Gilin (averaged k) & ILK activity to p-Akt \\
+\texttt{pAkt\_deg} & 0.2 & Gilin Table 1 & p-Akt degradation \\
+\texttt{FL2} & 0.4181 & Gilin (averaged k) & p-Akt to p-mTOR \\
+\texttt{pmTOR\_deg} & 3.0 & Gilin Table 1 & p-mTOR degradation \\
+\texttt{FL3} & 0.15 & Calibrated & p-mTOR to HIF feedback, reduced from 0.4181 \\
+\texttt{ILK\_activation} & 0.4181 & Assumption & ILK protein to active ILK, FL1 scale \\
+\texttt{ILK\_activity\_deg} & 0.2 & Assumption & active ILK decay, degradation scale \\
+\texttt{T315\_inhibits\_ILK\_activity} & Vmax 0.27, Km 0.6 & Lee et al. + calibrated & Km = IC50 0.6, Vmax for 50\% at 0.6 \\
+\midrule
+\multicolumn{4}{l}{\textit{Chou EMT module}} \\
+\texttt{GSK3beta\_phosphorylation} & 0.4181 & Assumption & ILK-driven, FL1 scale \\
+\texttt{p\_GSK3beta\_deg} & 0.2 & Assumption & degradation scale \\
+\texttt{YB1\_induction} & 0.4181 & Assumption & ILK-driven, FL1 scale \\
+\texttt{YB1\_deg} & 0.2 & Assumption & degradation scale \\
+\texttt{basal\_Foxo3a\_prod} & 0.05 & Assumption & epithelial baseline \\
+\texttt{Foxo3a\_deg} & 0.05 & Assumption & slow turnover \\
+\texttt{YB1\_represses\_Foxo3a} & 0.3 & Assumption & YB-1 represses Foxo3a \\
+\texttt{HIF\_induces\_Snail} & 0.05 & Assumption & slow EMT transcription \\
+\texttt{YB1\_induces\_Snail} & 0.05 & Assumption & slow EMT transcription \\
+\texttt{Snail\_deg} & 0.2 & Assumption & degradation scale \\
+\texttt{Snail\_induces\_Zeb1} & 0.05 & Assumption & slow EMT transcription \\
+\texttt{Zeb1\_deg} & 0.2 & Assumption & degradation scale \\
+\texttt{Snail\_represses\_Ecadherin} & 0.05 & Assumption & EMT repression \\
+\texttt{Zeb1\_represses\_Ecadherin} & 0.05 & Assumption & EMT repression \\
+\texttt{basal\_Ecadherin\_prod} & 0.15 & Assumption & epithelial baseline \\
+\texttt{Ecadherin\_deg} & 0.05 & Assumption & slow turnover \\
+\texttt{Snail\_induces\_vimentin} & 0.05 & Assumption & slow EMT transcription \\
+\texttt{Zeb1\_induces\_vimentin} & 0.05 & Assumption & slow EMT transcription \\
+\texttt{vimentin\_deg} & 0.2 & Assumption & degradation scale \\
+\midrule
+\multicolumn{4}{l}{\textit{Hsu IL6/NF-$\kappa$B module}} \\
+\texttt{IL6\_activates\_Stat3} & 0.4181 & Assumption & IL6 to p-Stat3, FL1 scale \\
+\texttt{Stat3\_deactivation} & 0.2 & Assumption & degradation scale \\
+\texttt{Stat3\_induces\_E2F1} & 0.1 & Assumption & p-Stat3 to E2F1 \\
+\texttt{E2F1\_deg} & 0.2 & Assumption & degradation scale \\
+\texttt{E2F1\_induces\_ILK} & 1.0 & Calibrated & E2F1 to ILK, raised from 0.1 \\
+\texttt{pAkt\_activates\_NFkB} & 0.4181 & Assumption & p-Akt to NF-kB, FL1 scale \\
+\texttt{NFkB\_deactivation} & 0.2 & Assumption & degradation scale \\
+\texttt{NFkB\_induces\_IL6} & 0.01 & Assumption & weak autocrine feedback \\
+\texttt{IL6\_deg} & 0.3 & Assumption & IL6 clearance \\
+\bottomrule
+\end{longtable}
+
+\begin{table}[ht]\centering
+\caption{Initial markings. All places not listed start at 0.}\label{tab:markings}
+\begin{tabular}{@{}llll@{}}\toprule
+Place & Marking & Meaning & Source \\ \midrule
+\texttt{O2} & condition, Fixed & oxygen level & Gilin Table 2 \\
+\texttt{S4\_ARNT} & 5 & total ARNT & Gilin Table 2 \\
+\texttt{S6\_HRE} & 1 & HRE site & Gilin Table 2 \\
+\texttt{S12\_PHD} & 10 & total PHD & Gilin Table 2 \\
+\texttt{S17\_VHL} & 10 & total VHL & Gilin Table 2 \\
+\texttt{T315} & condition, Fixed & inhibitor dose & Lee et al. \\
+\texttt{Foxo3a} & 1 & epithelial baseline & Assumption \\
+\texttt{E\_cadherin} & 1 & epithelial baseline & Assumption \\
+\texttt{Stat3\_inactive} & 1 & total Stat3 pool & Assumption \\
+\texttt{NFkB\_inactive} & 1 & total NF-kB pool & Assumption \\
+\texttt{IL6} & 1.0 (Fixed in IL6 expt) & baseline IL6 & Assumption / Hsu \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[ht]\centering
+\caption{The four calibrated values. All other rates are from the literature or stated assumptions.}\label{tab:calibrated}
+\begin{tabular}{@{}llll@{}}\toprule
+Parameter & From & To & Reason \\ \midrule
+FL3 & 0.4181 & 0.15 & restore HIF oxygen switch (Chou Fig 1A-B) \\
+k14, k17 & 0.0226 & 0.03 & place switch at O2 0.6 to 0.7 \\
+E2F1\_induces\_ILK & 0.1 & 1.0 & IL6 drives ILK (Hsu Fig 1B) \\
+T315 Vmax & 1 & 0.27 & 50\% ILK inhibition at IC50 0.6 (Lee et al.) \\
+\bottomrule\end{tabular}\end{table}
