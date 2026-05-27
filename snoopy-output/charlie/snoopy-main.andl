@@ -1,0 +1,332 @@
+cpn  [main]
+{
+constants:
+places:
+continuous:
+  O2{fix} = 0.1;
+  S3_HIF = 0;
+  S4_ARNT = 5;
+  S5_HIF_ARNT = 0;
+  S6_HRE = 1;
+  S7_HIF_ARNT_HRE = 0;
+  S12_PHD = 10;
+  S13_HIF_PHD = 0;
+  S14_HIFOH = 0;
+  S15_HIF_ARNT_PHD = 0;
+  S16_HIFOH_ARNT = 0;
+  S17_VHL = 10;
+  S18_HIFOH_VHL = 0;
+  S22_HIFOH_ARNT_HRE = 0;
+  ILK_protein = 0;
+  p_473S_Akt = 0;
+  p_mTOR = 0;
+  ILK_activity = 0;
+  T315{fix} = 1.2;
+  p_GSK3beta = 0;
+  YB_1 = 0;
+  Foxo3a = 1;
+  Snail = 0;
+  Zeb1 = 0;
+  E_cadherin = 1;
+  vimentin = 0;
+  IL6 = 1.0;
+  p_Stat3 = 0;
+  E2F1 = 0;
+  NFkB_activity = 0;
+  Stat3_inactive = 1;
+  NFkB_inactive = 1;
+
+transitions:
+continuous:
+  k1
+    : 
+    : [S3_HIF + 1]
+    : MassAction(0.1929)
+    ;
+  k2
+    : 
+    : [S3_HIF - 1]
+    : MassAction(0.0007)
+    ;
+  k3
+    : 
+    : [S5_HIF_ARNT + 1] & [S3_HIF - 1] & [S4_ARNT - 1]
+    : MassAction(0.0148)
+    ;
+  k4
+    : 
+    : [S3_HIF + 1] & [S4_ARNT + 1] & [S5_HIF_ARNT - 1]
+    : MassAction(1.6732)
+    ;
+  k5
+    : 
+    : [S7_HIF_ARNT_HRE + 1] & [S5_HIF_ARNT - 1] & [S6_HRE - 1]
+    : MassAction(0.2681)
+    ;
+  k6
+    : 
+    : [S5_HIF_ARNT + 1] & [S6_HRE + 1] & [S7_HIF_ARNT_HRE - 1]
+    : MassAction(0.0809)
+    ;
+  k12
+    : 
+    : [S13_HIF_PHD + 1] & [S3_HIF - 1] & [S12_PHD - 1]
+    : MassAction(1.5478)
+    ;
+  k13
+    : 
+    : [S3_HIF + 1] & [S12_PHD + 1] & [S13_HIF_PHD - 1]
+    : MassAction(0.0416)
+    ;
+  k14
+    : 
+    : [S14_HIFOH + 1] & [S12_PHD + 1] & [O2 + 1] & [S13_HIF_PHD - 1] & [O2 - 1]
+    : MassAction(0.0226)
+    ;
+  k15
+    : 
+    : [S15_HIF_ARNT_PHD + 1] & [S5_HIF_ARNT - 1] & [S12_PHD - 1]
+    : MassAction(1.5478)
+    ;
+  k16
+    : 
+    : [S5_HIF_ARNT + 1] & [S12_PHD + 1] & [S15_HIF_ARNT_PHD - 1]
+    : MassAction(0.0416)
+    ;
+  k17
+    : 
+    : [S16_HIFOH_ARNT + 1] & [S12_PHD + 1] & [O2 + 1] & [S15_HIF_ARNT_PHD - 1] & [O2 - 1]
+    : MassAction(0.0226)
+    ;
+  k18
+    : 
+    : [S18_HIFOH_VHL + 1] & [S14_HIFOH - 1] & [S17_VHL - 1]
+    : MassAction(0.4738)
+    ;
+  k19
+    : 
+    : [S14_HIFOH + 1] & [S17_VHL + 1] & [S18_HIFOH_VHL - 1]
+    : MassAction(0.1392)
+    ;
+  k20
+    : 
+    : [S17_VHL + 1] & [S18_HIFOH_VHL - 1]
+    : MassAction(0.2144)
+    ;
+  k21
+    : 
+    : [S16_HIFOH_ARNT + 1] & [S14_HIFOH - 1] & [S4_ARNT - 1]
+    : MassAction(0.0148)
+    ;
+  k22
+    : 
+    : [S14_HIFOH + 1] & [S4_ARNT + 1] & [S16_HIFOH_ARNT - 1]
+    : MassAction(1.6732)
+    ;
+  k29
+    : 
+    : [S22_HIFOH_ARNT_HRE + 1] & [S16_HIFOH_ARNT - 1] & [S6_HRE - 1]
+    : MassAction(0.2681)
+    ;
+  k30
+    : 
+    : [S16_HIFOH_ARNT + 1] & [S6_HRE + 1] & [S22_HIFOH_ARNT_HRE - 1]
+    : MassAction(0.0809)
+    ;
+  ILK_tr1
+    : 
+    : [S7_HIF_ARNT_HRE + 1] & [ILK_protein + 1] & [S7_HIF_ARNT_HRE - 1]
+    : MassAction(1.0000)
+    ;
+  ILK_tr2
+    : 
+    : [S22_HIFOH_ARNT_HRE + 1] & [ILK_protein + 1] & [S22_HIFOH_ARNT_HRE - 1]
+    : MassAction(1.0000)
+    ;
+  ILK_deg
+    : 
+    : [ILK_protein - 1]
+    : MassAction(3.0000)
+    ;
+  FL1
+    : 
+    : [p_473S_Akt + 1] & [ILK_activity + 1] & [ILK_activity - 1]
+    : MassAction(0.4181)
+    ;
+  pAkt_deg
+    : 
+    : [p_473S_Akt - 1]
+    : MassAction(0.2000)
+    ;
+  FL2
+    : 
+    : [p_473S_Akt + 1] & [p_mTOR + 1] & [p_473S_Akt - 1]
+    : MassAction(0.4181)
+    ;
+  pmTOR_deg
+    : 
+    : [p_mTOR - 1]
+    : MassAction(3.0000)
+    ;
+  FL3
+    : 
+    : [p_mTOR + 1] & [S3_HIF + 1] & [p_mTOR - 1]
+    : MassAction(0.4181)
+    ;
+  ILK_activation
+    : 
+    : [ILK_protein + 1] & [ILK_activity + 1] & [ILK_protein - 1]
+    : MassAction(0.4181)
+    ;
+  ILK_activity_deg
+    : 
+    : [ILK_activity - 1]
+    : MassAction(0.2000)
+    ;
+  T315_inhibits_ILK_activity
+    : 
+    : [T315 + 1] & [T315 - 1] & [ILK_activity - 1]
+    : MichaelisMenten( 1,0.6 )
+    ;
+  GSK3beta_phosphorylation
+    : 
+    : [ILK_activity + 1] & [p_GSK3beta + 1] & [ILK_activity - 1]
+    : MassAction(0.4181)
+    ;
+  p_GSK3beta_deg
+    : 
+    : [p_GSK3beta - 1]
+    : MassAction(0.2000)
+    ;
+  YB1_induction
+    : 
+    : [ILK_activity + 1] & [YB_1 + 1] & [ILK_activity - 1]
+    : MassAction(0.4181)
+    ;
+  YB1_deg
+    : 
+    : [YB_1 - 1]
+    : MassAction(0.2000)
+    ;
+  basal_Foxo3a_prod
+    : 
+    : [Foxo3a + 1]
+    : MassAction(0.0500)
+    ;
+  Foxo3a_deg
+    : 
+    : [Foxo3a - 1]
+    : MassAction(0.0500)
+    ;
+  YB1_represses_Foxo3a
+    : 
+    : [YB_1 + 1] & [YB_1 - 1] & [Foxo3a - 1]
+    : MassAction(0.3000)
+    ;
+  HIF_induces_Snail
+    : 
+    : [S3_HIF + 1] & [Snail + 1] & [S3_HIF - 1]
+    : MassAction(0.0500)
+    ;
+  YB1_induces_Snail
+    : 
+    : [YB_1 + 1] & [Snail + 1] & [YB_1 - 1]
+    : MassAction(0.0500)
+    ;
+  Snail_deg
+    : 
+    : [Snail - 1]
+    : MassAction(0.2000)
+    ;
+  Snail_induces_Zeb1
+    : 
+    : [Snail + 1] & [Zeb1 + 1] & [Snail - 1]
+    : MassAction(0.0500)
+    ;
+  Zeb1_deg
+    : 
+    : [Zeb1 - 1]
+    : MassAction(0.2000)
+    ;
+  Snail_represses_Ecadherin
+    : 
+    : [Snail + 1] & [Snail - 1] & [E_cadherin - 1]
+    : MassAction(0.0500)
+    ;
+  Zeb1_represses_Ecadherin
+    : 
+    : [Zeb1 + 1] & [Zeb1 - 1] & [E_cadherin - 1]
+    : MassAction(0.0500)
+    ;
+  basal_Ecadherin_prod
+    : 
+    : [E_cadherin + 1]
+    : MassAction(0.1500)
+    ;
+  Ecadherin_deg
+    : 
+    : [E_cadherin - 1]
+    : MassAction(0.0500)
+    ;
+  Snail_induces_vimentin
+    : 
+    : [Snail + 1] & [vimentin + 1] & [Snail - 1]
+    : MassAction(0.0500)
+    ;
+  Zeb1_induces_vimentin
+    : 
+    : [Zeb1 + 1] & [vimentin + 1] & [Zeb1 - 1]
+    : MassAction(0.0500)
+    ;
+  vimentin_deg
+    : 
+    : [vimentin - 1]
+    : MassAction(0.2000)
+    ;
+  IL6_activates_Stat3
+    : 
+    : [IL6 + 1] & [p_Stat3 + 1] & [IL6 - 1] & [Stat3_inactive - 1]
+    : MassAction(0.4181)
+    ;
+  Stat3_deactivation
+    : 
+    : [Stat3_inactive + 1] & [p_Stat3 - 1]
+    : MassAction(0.2000)
+    ;
+  Stat3_induces_E2F1
+    : 
+    : [p_Stat3 + 1] & [E2F1 + 1] & [p_Stat3 - 1]
+    : MassAction(0.1000)
+    ;
+  E2F1_deg
+    : 
+    : [E2F1 - 1]
+    : MassAction(0.2000)
+    ;
+  E2F1_induces_ILK
+    : 
+    : [E2F1 + 1] & [ILK_protein + 1] & [E2F1 - 1]
+    : MassAction(0.1000)
+    ;
+  pAkt_activates_NFkB
+    : 
+    : [p_473S_Akt + 1] & [NFkB_activity + 1] & [p_473S_Akt - 1] & [NFkB_inactive - 1]
+    : MassAction(0.4181)
+    ;
+  NFkB_deactivation
+    : 
+    : [NFkB_inactive + 1] & [NFkB_activity - 1]
+    : MassAction(0.2000)
+    ;
+  NFkB_induces_IL6
+    : 
+    : [NFkB_activity + 1] & [IL6 + 1] & [NFkB_activity - 1]
+    : MassAction(0.0100)
+    ;
+  IL6_deg
+    : 
+    : [IL6 - 1]
+    : MassAction(0.3000)
+    ;
+
+}
