@@ -24,9 +24,7 @@ flowchart TB
 
     %% Hsu et al. extension
     IL6["IL-6"] --> pStat3["p-Stat3"]
-    pStat3 --> CyclinD1["cyclin D1"]
-    CyclinD1 --> CDK2["CDK2"]
-    CDK2 --> E2F1["E2F1"]
+    pStat3 --> E2F1["E2F1"]
     E2F1 --> ILK
     pAkt --> NFkB["NF-kappaB"]
     NFkB --> IL6
@@ -40,7 +38,7 @@ flowchart TB
 
     class O2,HIF,pmTOR gilin;
     class pGSK3,YB1,Foxo3a,Snail,Zeb1,Ecad,Vim chou;
-    class IL6,pStat3,CyclinD1,CDK2,E2F1,NFkB hsu;
+    class IL6,pStat3,E2F1,NFkB hsu;
     class T315 inhibitor;
     class ILK,pAkt shared;
 ```
