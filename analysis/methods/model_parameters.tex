@@ -91,12 +91,13 @@ Place & Marking & Meaning & Source \\ \midrule
 \texttt{IL6} & 1.0 (Fixed in IL6 expt) & baseline IL6 & Assumption / Hsu \\
 \bottomrule\end{tabular}\end{table}
 
-\begin{table}[ht]\centering
-\caption{The four calibrated values. All other rates are from the literature or stated assumptions.}\label{tab:calibrated}
-\begin{tabular}{@{}llll@{}}\toprule
-Parameter & From & To & Reason \\ \midrule
-FL3 & 0.4181 & 0.15 & restore HIF oxygen switch (Chou Fig 1A-B) \\
-k14, k17 & 0.0226 & 0.03 & place switch at O2 0.6 to 0.7 \\
-E2F1\_induces\_ILK & 0.1 & 1.0 & IL6 drives ILK (Hsu Fig 1B) \\
-T315 Vmax & 1 & 0.27 & 50\% ILK inhibition at IC50 0.6 (Lee et al.) \\
-\bottomrule\end{tabular}\end{table}
+% table* spans both columns. Replace the \ref labels with figure labels.
+\begin{table*}[ht]\centering
+\caption{The four calibrated values. Each was calibrated so that a literature target is reproduced. All other rates are from the literature or stated assumptions.}\label{tab:calibrated}
+\begin{tabular}{@{}llp{9cm}@{}}\toprule
+Parameter & Change & Calibrated so that \\ \midrule
+\texttt{FL3} & 0.4181 $\to$ 0.15 & the HIF switch occurs at O$_2$ 0.6 to 0.7, reproducing the hypoxia/normoxia contrast of Chou et al.\ Fig.~1 (Fig.~\ref{fig:oxygen_switch}) \\
+\texttt{k14}, \texttt{k17} & 0.0226 $\to$ 0.03 & the switch is placed within the O$_2$ 0.6 to 0.7 window (Fig.~\ref{fig:oxygen_switch}) \\
+\texttt{E2F1\_induces\_ILK} & 0.1 $\to$ 1.0 & a sustained IL6 stimulus raises ILK, as in Hsu et al.\ Fig.~1B (Fig.~\ref{fig:il6_stimulation}) \\
+\texttt{T315} $V_{\max}$ & 1 $\to$ 0.27 & ILK activity is 50\% inhibited at T315 = 0.6, the Lee et al.\ IC50 (Fig.~\ref{fig:t315_signaling}) \\
+\bottomrule\end{tabular}\end{table*}
