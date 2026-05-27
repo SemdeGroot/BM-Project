@@ -4721,7 +4721,7 @@
     <nodeclass count="0" name="Coarse Transition"/>
   </nodeclasses>
   <edgeclasses count="4">
-    <edgeclass count="137" name="Edge">
+    <edgeclass count="139" name="Edge">
       <edge source="3221" target="3013" id="3572" net="1">
         <attribute name="Multiplicity" id="3573" net="1">
           <![CDATA[1]]>
@@ -7732,6 +7732,50 @@
             <points count="2">
               <point x="1956.75" y="627.00"/>
               <point x="1954.23" y="515.00"/>
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="3325" target="3000" id="12000" net="1">
+        <attribute name="Multiplicity" id="12001" net="1">
+          <![CDATA[1]]>
+          <graphics count="1">
+            <graphic xoff="-40.00" yoff="-150.00" x="1360.00" y="110.00" id="12002" net="1" show="0" grparent="12005" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="12003" net="1">
+          <![CDATA[Return arc for fixed oxygen input; keeps O2 structurally conserved for Charlie]]>
+          <graphics count="1">
+            <graphic xoff="0.00" yoff="-150.00" x="1400.00" y="110.00" id="12004" net="1" show="0" grparent="12005" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="12005" net="1" source="3337" target="3012" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1400.00" y="250.00"/>
+              <point x="430.00" y="120.00"/>
+            </points>
+          </graphic>
+        </graphics>
+      </edge>
+      <edge source="3364" target="3000" id="12006" net="1">
+        <attribute name="Multiplicity" id="12007" net="1">
+          <![CDATA[1]]>
+          <graphics count="1">
+            <graphic xoff="-40.00" yoff="-400.00" x="1260.00" y="120.00" id="12008" net="1" show="0" grparent="12011" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+          </graphics>
+        </attribute>
+        <attribute name="Comment" id="12009" net="1">
+          <![CDATA[Return arc for fixed oxygen input; keeps O2 structurally conserved for Charlie]]>
+          <graphics count="1">
+            <graphic xoff="0.00" yoff="-400.00" x="1300.00" y="120.00" id="12010" net="1" show="0" grparent="12011" state="1" pen="0,0,0" brush="255,255,255" thickness="1"/>
+          </graphics>
+        </attribute>
+        <graphics count="1">
+          <graphic id="12011" net="1" source="3376" target="3012" state="1" show="1" pen="0,0,0" brush="0,0,0" edge_designtype="3" thickness="1">
+            <points count="2">
+              <point x="1280.00" y="510.00"/>
+              <point x="430.00" y="120.00"/>
             </points>
           </graphic>
         </graphics>
